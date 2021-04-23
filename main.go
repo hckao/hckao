@@ -57,7 +57,7 @@ func main() {
 	sql_statement := "INSERT INTO inventory (name, quantity) VALUES ($1, $2);"
 	_, err = db.Exec(sql_statement, "banana", 150)
 	checkError(err)
-	_, err = db.Exec(sql_statement, "orange", 154)
+	_, err = db.Exec(sql_statement, "orange", 156)
 	checkError(err)
 	_, err = db.Exec(sql_statement, "apple", 100)
 	checkError(err)
